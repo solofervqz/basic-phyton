@@ -1,0 +1,118 @@
+[GET] https//api.nezflis.com/movies
+Response: { 
+    "movies":[
+        {
+            "id": 100,
+            "name": "Back to the future",
+            "duration": 116,
+            "genre": Sci-fi
+        },
+        {
+            "id": 101,
+            "name": "Blade Runner",
+            "duration": 117,
+            "genre": Sci-fi
+        },
+        {
+            "id": 102,
+            "name": "Matrix",
+            "duration": 136,
+            "genre": Sci-fi
+        }    ]
+}
+Status code: 200 (OK)
+
+
+[POST] https//api.nezflis.com/movies
+[Body] {
+            "name": "Star Wars",
+            "duration": 123,
+            "genre": Sci-fi
+        }
+
+Response: {
+            "id": 103,
+            "name": "Star Wars",
+            "duration": 123,
+            "genre": Sci-fi
+        }
+Status code: 201 (Created)
+
+
+[PUT] https//api.nezflis.com/movies/103
+[Body] { 
+            "duration": 121
+        }
+
+Response: {
+            "id": 103,
+            "name": "Star Wars",
+            "duration": 121,
+            "genre": Sci-fi
+        }
+Status code: 201 (Created)
+
+
+[DELETE] https//api.nezflis.com/movies/103
+Status code: 200 (OK)
+
+
+---------------------------------------------
+
+[GET] https//api.nezflis.com/users
+Response: { 
+    "users":[
+        {
+            "id": 200,
+            "name": "José Aguirre",
+            "user": "Jetix",
+            "pass": "12345"
+        },
+        {
+            "id": 201,
+            "name": "Juan Aguirre",
+            "user": "Juan_Ag",
+            "pass": "qwerty"
+        },
+        {
+            "id": 202,
+            "name": "Daniela Aguirre",
+            "user": "dany_Ag",
+            "pass": "12345"
+        }    ]
+}
+Status code: 200 (OK)
+
+
+[POST] https//api.nezflis.com/users
+[Body] {
+            "name": "Fernanda Vázquez",
+            "user": "gobo",
+            "pass": "12345"
+        }
+
+Response: {
+            "id": 203,
+            "name": "Fernanda Vázquez",
+            "user": "gobo",
+            "pass": "12345"
+        }
+Status code: 201 (Created)
+
+
+[PUT] https//api.nezflis.com/users/203
+[Body] { 
+            "user": "slofervzq"
+        }
+
+Response: {
+            "id": 203,
+            "name": "Fernanda Vázquez",
+            "user": "slofervzq",
+            "pass": "12345"
+        }
+Status code: 201 (Created)
+
+
+[DELETE] https//api.nezflis.com/users/203
+Status code: 200 (OK)
